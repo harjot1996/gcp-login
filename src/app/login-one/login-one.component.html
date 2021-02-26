@@ -1,0 +1,39 @@
+<div class="page">
+    <div class="floating-slider">
+        <mat-slider
+            class="example-margin"
+            [max]="4"
+            [min]="1"
+            [tickInterval]="1"
+            [step]="1"
+            (input)="sizeChange($event)">
+        </mat-slider>
+    </div>
+    <div class="inlay">
+        <div class="form-container-invis">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="box-card">
+                <mat-form-field appearance="fill">
+                    <mat-label>Username</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div class="spacer"></div>
+              <div class="box-card">
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput>
+                </mat-form-field>
+              </div>
+              <div class="spacer"></div>
+              <div class="spacer"></div>
+              <div class="spacer"></div>
+              <div class="spacer"></div>
+              <div class="spacer"></div>
+              <div class="box-card">     
+                <button mat-raised-button color="primary">Login</button>
+              </div>
+        </div>
+    </div>
+</div>
